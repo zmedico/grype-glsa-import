@@ -1,0 +1,11 @@
+variables:
+  MIN_COVERAGE: 0
+  STABILIZE: "yes"
+
+include:
+  - project: gitlab/includes/ci-cd
+    file: secure-1.yml
+  - project: cgei/gitlab/ci-includes-gentoo
+    file: cgei-private-ebuild-ci.yml
+  - project: cgei/gitlab/ci-includes-gentoo
+    file: gk-checks-generic-ci.yml
