@@ -14,7 +14,7 @@ import (
 
 var (
 	// Exclude this one because it's prone to false-positives.
-	excludeList = []string{}
+	excludeList = []string{"GLSA-202104-04"}
 )
 
 type Vulnerable struct {
